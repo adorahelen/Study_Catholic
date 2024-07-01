@@ -69,5 +69,5 @@ window.exitonclick()
 #이 부분은 VsCode에서 window에 turtle.Screen()을 할당하지 않으면 창이 1초만에 사라지기에 작성함
 
 
-#얼추 완성했는데, 지속적으로 사용자가 가위를 입력했을때 이유불명의 무승부가 출력된다.
+#사용자가 가위를 입력했을때 이유불명의 무승부가 출력된다.
 # 해결 : 변수명 오류 : if com_value == 1 : com_number = "가위" 라인 com_numbers로 작성
