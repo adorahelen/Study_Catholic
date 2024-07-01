@@ -182,3 +182,60 @@
 #     t.circle(w)
 
 # 반복문 시작
+# i = 0
+# for i in range(10, 0, -1):
+#     print(i, end=" ")
+#     #줄바꿈 방지용
+
+# for i in range(10, 0, -1):
+#     print(i)
+
+# for i in range(1, 21, 2):
+#     print(i+1, end=" ")
+
+
+# sum = 0
+# for i in range (1, 101):
+#     sum += i
+# print(sum)
+
+# n = int(input(" 정수를 입력하시오 : "))
+# fact = 1
+# for a in range (1, n+1):
+#     fact *= a
+
+# print(f"{n}! 은 {fact}")
+# 변수 선언시 0 아니도록, n+1 로 범위 지정 잘 할 것
+
+# a = int(input(" 별찍기 스타토 : "))
+# for i in range (1, a+1):
+#     print("*" * i)
+
+# s = input("문자열 하나 입력 : ")
+# l = len(s)
+# for i in range(l):
+#     print(s[i] + " ", end="")
+# print(" ")
+# for i in s:
+#     print(i + " ", end="")
+
+
+# import turtle, random
+# t = turtle.Turtle()
+# c = random.randint(50, 200)
+# for i in range (5):
+#     t.fd(c)
+#     t.rt(144)
+# window = turtle.Screen()
+# window.exitonclick()
+
+# a = int(input(" 구구단 스타토 : "))
+# if 1 <= a <= 9:
+#     for i in range (1,10):
+#         print( f"{a}  * {i}  = {a*i}")
+# else: print("NO ")
+
+res = "아니"
+while res == "아니":
+    res=input("가능?")
+print("ㅇㅇ")
