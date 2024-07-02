@@ -168,5 +168,97 @@
 # print("게임 끝")
 # print(f"{score} 점수 스코어임")
 
+#몬두리안 화가 거북이짱 개념정리
+# t.color 색은 색상코드나 문자로 지정 , t.color((r,g,b))or t.color(r,g,b) : ㄱ,ㅎ,ㅠ, 는 0.0부터 1.0 사이의 실수값
+# 1. t.pencolor 2.t.fillcolor (선색과 채우기 색 ) t.speed 속도 지정 가능 0 , 10 , 6 ,3, 1
+# = random.random 하면 0.0 에서 1.0t사이의 값
 
-1
+# import turtle, random
+
+# r = random.random()
+# g = random.random()
+# b = random.random()
+
+# t = turtle.Turtle()
+
+# t.pensize(3)
+# for i in range(20):
+#     r = random.random()
+#     g = random.random()
+#     b = random.random()
+#     x = random.randint(-300, 300)
+#     y = random.randint(-300, 300)
+#     z = random.randint(0, 300)
+#     t. penup()
+#     t.goto(x, y)
+#     t.pendown()
+#     t.color(r,g,b)
+#     t.begin_fill()
+#     for j in range (4):
+#         t.fd(z)
+#         t.rt(90)
+#     t.end_fill()
+
+# t.shape("turtle")
+# window = turtle.Screen()
+# window.exitonclick()
+
+
+
+# import turtle, random
+
+# r = random.random()
+# g = random.random()
+# b = random.random()
+# t = turtle.Turtle()
+# t.pensize(10)
+# t.speed(0)
+
+# poly = random.randint(3, 12)
+# a = random.randint(10, 20)
+# k = random.randint(10, 100)
+
+# for i in range(a):
+#     r = random.random()
+#     g = random.random()
+#     b = random.random()
+#     x = random.randint(-300, 300)
+#     y = random.randint(-300, 300)
+#     z = random.randint(10, 300)
+#     t. penup()
+#     t.goto(x, y)
+#     t.pendown()
+#     t.color(r,g,b)
+#     t.begin_fill()
+
+#     for j in range (poly):
+#         t.fd(k)
+#         t.rt(360/poly)
+#     t.end_fill()
+
+# t.shape("turtle")
+# window = turtle.Screen()
+# window.exitonclick()
+
+
+# n = int(input())
+
+# for i in range(1, n+1):
+#     if n % i == 0:
+#         print(i, end=" ")
+
+
+#유클리드 호제법
+# n1 = int(input())
+# n2 = int(input())
+
+# if n1 < n2:
+#     n1, n2 = n2, n1
+
+# while n2 > 0:
+#     r = n1%n2
+#     n1, n2 = n2, r
+# if n1 != 1:
+#     print("두수의 최대 공약수 : ", n1)
+# else :
+#     print("두수는 서로소이다. ")
