@@ -117,31 +117,31 @@
 # window = turtle.Screen()
 
 
-import random
-score = 100
-count = 0
-room = random.randrange(1, 4)
+# import random
+# score = 100
+# count = 0
+# room = random.randrange(1, 4)
 
-while True:
-    num = int(input(" 방번호를 입력하시오 : "))
-    if not 3>= num >= 1:
-        print("Error")
-        continue
-    if num == room:
-        print("범인를 잡았습니다.")
-        break
+# while True:
+#     num = int(input(" 방번호를 입력하시오 : "))
+#     if not 3>= num >= 1:
+#         print("Error")
+#         continue
+#     if num == room:
+#         print("범인를 잡았습니다.")
+#         break
 
-    else: 
-        print("그 방엔 범인 없어용")
-        score -= 10
-        print(score)
-        if score <= 0:
-            break
-        count += 1
-        if count == 2:
-            print("초기화")
-            room = random.randrange(1,4)
-            count = 0
+#     else: 
+#         print("그 방엔 범인 없어용")
+#         score -= 10
+#         print(score)
+#         if score <= 0:
+#             break
+#         count += 1
+#         if count == 2:
+#             print("초기화")
+#             room = random.randrange(1,4)
+#             count = 0
 
 # room = random.randint(1, 3)
 # if num == room:
@@ -165,5 +165,8 @@ while True:
     #     print("그 방엔 범인 없어용")
     #     score -= 10
 
-print("게임 끝")
-print(f"{score} 점수 스코어임")
+# print("게임 끝")
+# print(f"{score} 점수 스코어임")
+
+
+1
