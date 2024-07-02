@@ -262,3 +262,25 @@
 #     print("두수의 최대 공약수 : ", n1)
 # else :
 #     print("두수는 서로소이다. ")
+
+
+import random
+t = 1
+answer = random.randint(1, 100)
+print("1부터 100까지의 숫자를 하나 맞춰보아라")
+guess = int(input(" 숫자 : "))
+while guess != answer:
+    
+    t += 1
+    if guess < answer:
+        print(" 쫌 더 ")
+    elif guess > answer:
+        print(" 아래로 ")
+    guess = int(input(" 숫자 : "))
+
+    if t == 5:
+        break
+
+if guess == answer:
+    print(" 맞추심, 시도횟수는" , t)
+else : print(f"실패, 정답은 {answer}, 시도횟수는 {t}")
