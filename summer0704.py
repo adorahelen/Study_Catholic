@@ -125,16 +125,106 @@
 # print(cart)
 # cart.remove("sdasd")
 
-alist = [1,2,34,5,6,7,7,78,8,89,]
-del alist[3]
-print(alist)
-del(alist[3])
-print(alist)
-del(alist[2:6])
-print(alist)
+# alist = [1,2,34,5,6,7,7,78,8,89,]
+# del alist[3]
+# print(alist)
+# del(alist[3])
+# print(alist)
+# del(alist[2:6])
+# print(alist)
 
-alist = ['사과', '삭제', '세제']
-item = alist.pop()
-print(alist, item)
-item = alist.pop(0)
-print(alist, item)
+# alist = ['사과', '삭제', '세제']
+# item = alist.pop()
+# print(alist, item)
+# item = alist.pop(0)
+# print(alist, item)
+
+# 리스트 요소 삭제
+# 리스트.remove(요소) : 리스트에 있는 요소를 찾ㅈ아 삭제(단 동일한 것이 있더라도 첫번째만 삭제하고 없으면 에러 발생)
+# del 리스트 [인덱스] : 인덱스에 해당하는 요소를 삭제, del(리스트[인덱스])같이 함수 형태로도 사용 가능
+# del 리스트 [인덱스1 : 인덱스2] : 두 인덱스 사이에 있는 요소들을 삭제
+# 리스트 [인덱스 1 : 인덱스2] = [] 사이에 있는 요소들을 공백으로 치환 즉 삭제
+# 리스트 .pop() 리스트 마지막 요소를 반환하면서 삭제
+# 리스트 .pop(인덱스) d인덱스 해당하는 요소를 반환하면서 삭제
+# 리스트. clear () : 리스트의 모든 요소를 삭제, del 리스트[:], 리스트[:] = [], 리ㅣ스트 = []
+# 주의 : del 리스트라고 하면 리스트 변수 자체가 소멸한다. 
+
+# cart = ['사과', '섬유유연제', '화장지', '치약']
+# cart[1:3] = [] 
+# print(cart)
+# cart.clear()
+# print(cart)
+# cart = ['사과', '섬유유연제', '화장지', '치약']
+# print(cart)
+# del cart[:]
+# print(cart)
+# cart = ['사과', '섬유유연제', '화장지', '치약']
+# cart[:] = []
+# print(cart)
+# cart = ['사과', '섬유유연제', '화장지', '치약']
+# print(cart)
+# cart= []
+# print(cart)
+# cart = ['사과', '섬유유연제', '화장지', '치약']
+# print(cart)
+# del cart
+# print(cart)
+
+#리스트에서 항목 탐색하기 
+
+#리스트 index(요소) : 요소가 몇 번 인덱스에 있는지 인덱스 값 반환 (동일한 요소 있어도 첫 번째 찾은 요소 인덱스만 반환)
+#해당 요소가 없으면 에러 
+# 리스트.index(요소, start, end) : start ~ end -1 사이의 범위를 해당요소 찾아 인덱스 위치 반환 
+# cart = ['사과', '섬유유연제', '섬유유연제', '섬유유연제', '화장지', '치약', '린스']
+# print(cart.index('화장지'))
+# if '라면' in cart:
+#     print(cart.index('라면'))
+# print(cart.index('화장지', 3,6))
+# print(cart.index('린스', 3, len(cart)))
+
+#신나는 리스트 정렬하기 sort 가즈아 오름차순 나이 올라감 내림차순 나이 내려감, sort 써도 나중에는 직접 짜야함 기본적으로는 오름차순
+# new_list = sort(list), reverse = True 하면 내림차순, sorted 함수 쓰면 정렬된 새 리스트 나옴
+#리스트.sort : 정렬하는데 사용, 원본리스트를 변경, 오름차순으로 정렬
+#리스트.sort(reverse=True) : 내림차순 정렬
+#리스트.reverse(): 리스트의 요소 순서를 역순으로 변경, 정렬이 아님
+# list2 = list1.sorted() 틀림
+# list2 = sorted(list1)  이런식으로 사용
+# .sort() 한후후에 리스트 .reverse() 해도 내림차 정렬 가능
+
+# cart = [29, 39, 19, 29, 939,3,4, 14444]
+# cart2 = cart[:]
+# cart3 = cart[:]
+# cart.sort()
+# print(cart)
+# cart2.sort(reverse=True)
+# print(cart2)
+# c1 = sorted(cart3)
+# print(c1)
+# c2 = sorted(cart3, reverse=True)
+# print(c2)
+# cart3.reverse()
+# print(cart3)
+
+# list.count
+# list2 = list.copy
+# list2 = list + []
+# list2 = list[:]
+# 주의 : 리스트2 = 리스트 : 동일 내용으로 새로운 이름을 추가, 원본 리스트에 새 이름 추가한거임 (바로가기)
+
+# 리스트 컴프리헨션 
+# 리스트 = [저장요소 반복문] : 중간에 콤마가 들어가지 않고 공백이 들어감 [밑에 나온 형태]
+# 리스트 = [random,randint(1, 10) for i in range(10)] : 10 개의 값 추출 되어 요소로 저장돠면서 리스트 생성 
+
+import random
+list1 = [i for i in range(10)]
+print(list1)
+print(list1[3])
+print(list1.count(3))
+print(list1.count(13))
+list2 = [random.randrange(1, 11) for i in range(10)]
+print(list2)
+
+list3 = []
+for i in range(10):
+    list3.append(random.randint(1, 10))
+print(list3)
