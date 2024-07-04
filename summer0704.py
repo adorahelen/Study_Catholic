@@ -125,7 +125,17 @@
 # print(cart)
 # cart.remove("sdasd")
 
+# import random
 # alist = [1,2,34,5,6,7,7,78,8,89,]
+# print(alist)
+
+# k = alist.sort()
+# print(alist)
+# #함수 반환 자유 저ㅏ재 
+# k = random.shuffle(alist)
+# print(alist)
+# print(k)
+
 # del alist[3]
 # print(alist)
 # del(alist[3])
@@ -215,16 +225,85 @@
 # 리스트 = [저장요소 반복문] : 중간에 콤마가 들어가지 않고 공백이 들어감 [밑에 나온 형태]
 # 리스트 = [random,randint(1, 10) for i in range(10)] : 10 개의 값 추출 되어 요소로 저장돠면서 리스트 생성 
 
-import random
-list1 = [i for i in range(10)]
-print(list1)
-print(list1[3])
-print(list1.count(3))
-print(list1.count(13))
-list2 = [random.randrange(1, 11) for i in range(10)]
-print(list2)
+# import random
+# list1 = [i for i in range(10)]
+# print(list1)
+# print(list1[3])
+# print(list1.count(3))
+# print(list1.count(13))
 
-list3 = []
-for i in range(10):
-    list3.append(random.randint(1, 10))
-print(list3)
+# list2 = [random.randrange(1, 11) for i in range(10)]
+# print(list2)
+
+# list3 = []
+# for i in range(10):
+#     list3.append(random.randint(1, 10))
+# print(list3)
+
+# 변수 = random.choice(리스트) : 리스트에 있는 요소들 중 랜덤으로 하나의 요소를 결정하여 반환,
+# 리스트 외에 range(), 문자열 등이 사용될 수 있음 (시퀸스)
+
+# ex1 변수 = random.choice(range(1, 11)) 
+#     변수 = random.choice("string") 
+# ex2 변수 = random.sample(리스트, 개수) : 리스트에 있는 요소들 중 랜덤으로 개수만큼 추출하여 리스트로 변환,
+# 리스트 외에 range(), 문자열 등이 사용될 수 있음 (시퀸스)
+# *리스트 안에서 무적위 개수 뽑아 반환 리스트 말고, range() or 문자열 가능
+# => 추출시 중복 없고 , 개수 입려기 리스트의 총 개수를 초과 못함
+# -random.shuffle(리스트) : 리스트에 있는 요소들 순서를 섞어줌.원본변경
+
+# import random
+# alist = [random.randint(1, 100) for i in range (10)]
+# print(alist)
+# print(random.choice(alist))
+# print(random.choice(range(1, 11)))
+# print(random.choice("Good Morning"))
+# blist = [ 1,2,3,4,5,6,7]
+# list1 = random.sample(blist, 2)
+# list2 = random.sample(range(1, 21), 3)
+# list3 = random.sample("Good morning", 3)
+# list4 = random.sample(blist, 7) #8 쓰면 범위 에러 발생
+# list5 = random.sample(blist, 1)
+# print(list1, list2, list3, list4, list5)
+# clist = blist.copy()
+# print(clist)
+# random.shuffle(clist)
+# print(clist)
+
+# import random
+# dice2 = list()
+# for i in range(10):
+# dice2 = random.randrange(1, 11)
+# #         print(Dice)
+
+# import random
+# dice = [random.randint(1, 6) for i in range(10)]
+# print(dice)
+# import random
+# list1 = []
+# for i in range(5):
+#     list1[i] = input("Input your to do list 5 : ")
+   
+
+# # random.shuffle(list1)
+# print(list1)
+
+import random 
+dolist = [input(f"해야 할 일 입력({i+1}) : " ) for i in range (5)]
+print("해야 할 일 : ", dolist)
+
+random.shuffle(dolist)
+print("셔플된 해야할 일", dolist)
+dolist2 = dolist.copy()
+doit = random.choice(dolist)
+print("선택된 할 일 : %s" %(dolist))
+
+if doit in dolist:
+    dolist.remove(doit)
+print(dolist)
+
+if doit in dolist2:
+    doin = dolist2.index(doit)
+    print(doin)
+print(dolist.popin(doin))
+print(dolist)
+##리스트 복습하기 ㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠㅠ
