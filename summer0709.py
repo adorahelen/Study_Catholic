@@ -289,14 +289,35 @@
 # window.mainloop()
 
 
-import turtle
+# import turtle
 
-def draw(x,y):
-    t.goto(x, y)
+# def draw(x,y):
+#     t.goto(x, y)
 
-t= turtle.Turtle()
-t.pensize(10)
-t.speed(0)
-window = turtle.Screen()
-window.onscreenclick(draw)
-window.mainloop()
+# t= turtle.Turtle()
+# t.pensize(10)
+# t.speed(0)
+# window = turtle.Screen()
+# window.onscreenclick(draw)
+# window.mainloop()
+
+
+# draw(-300, 200)
+# t.onkey
+
+# import turtle
+# t = turtle.Turtle()
+
+# s = turtle.Screen()
+
+
+# def draw_maze
+# def turn_left
+# def turn_right
+
+# t.speed(0)
+
+# draw_maze(-300, 200)
+# s.onkey(turn_left, "Left")
+# s.onkey(turn_right, "Right")
+# t.penup()
