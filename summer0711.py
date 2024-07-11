@@ -211,27 +211,57 @@
 # print("Sdict3:", Sdict3)
 # print("sumDict:", sumDict)
 
-import random
-classdic = {}
-for i in range(34):
-    classdic[f"stud{i+1}"] = [random.randint(0, 100) for i in range(3)]
-print(classdic)
+# import random
+# classdic = {}
+# for i in range(34):
+#     classdic[f"stud{i+1}"] = [random.randint(0, 100) for i in range(3)]
+# print(classdic)
 
-english = []
-for i, j, k in classdic.values():
-    english.append(j)
-print(max(english))
+# english = []
+# for i, j, k in classdic.values():
+#     english.append(j)
+# print(max(english))
 
-average = []
-for k,e,m in classdic.values():
-    avg = (k+e+m) // 3
-    average.append(avg)
-print(avg)
-print(average)
+# average = []
+# for k,e,m in classdic.values():
+#     avg = (k+e+m) // 3
+#     average.append(avg)
+# print(avg)
+# print(average)
 
-for i,j in classdic.items():
-    sum1 = 0
-    for k in j:
-        sum1 += k
-    if sum1 // len(j) == max(average):
-        print(sum1//len(j))
+# #평균 점수가 가장 높은 학생잉 여러명일 것을 가정하여 코드를 작성함 
+# # Id는 생략하였으니 동일 한 75가 두 번 출력됨을 보아 올바르게 작성되었다 생각
+# for i,j in classdic.items():
+#     sum1 = 0
+#     for k in j:
+#         sum1 += k
+#     if sum1 // len(j) == max(average):
+#         print(sum1//len(j))
+
+buketlist = []
+i = 1
+while i <=5:
+    i += 1
+    a= input(" 사고자 하는 품목 5개 입력받기 : ")
+    if a in buketlist: 
+        i -= 1
+    else: 
+        buketlist.append(a) 
+    
+print(buketlist)
+
+
+buyed = {}
+n = 0
+while n < 3:
+    buyi = input(" 구매한 물폼 입력 : ")
+    if buyi not in buyed.values():
+        buyed[n] = buyi
+        n += 1
+    else:
+        print("이미 구매 내역이 있다")
+print(buyed)
+
+print("아직 구매하지 않은 물품")
+new = set(buketlist) - set(buyed.values())
+print(new)
