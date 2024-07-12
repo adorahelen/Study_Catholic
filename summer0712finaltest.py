@@ -50,3 +50,47 @@ Key()값을 이용해 자료에 접근한다.
 키와 관련된 값이 짝을 이루고 있다. { "홍길동" : "12345678", "이성게" : "라면" , }
 + 집합도 기본적으로 {}
 """
+awards = []
+
+for award in awards:
+    print(award)
+
+for award in awards: 
+    if award['수상년도'] <= 1990:
+        print(award['이름'], award['수상년도'])
+
+nation = set()
+for award in awards:
+    nation.add(award['국적'])
+
+'''
+딕셔너리 형태로 데이터를 만들고 이를 다시 리스트로 만드는 방법은 딕셔너리 형태의 데이터를 리스트에 append( 딕셔너리 자료형 )
+넣어서 만들면 된다. 
+
+'''
+
+planet_dict = {'수성' : 9140000, '금성': 1987855, "목성": 453212312}
+
+planet = input("행성이름 : ")
+speed = int(input(" : "))
+distance = planet_dict[planet]
+
+time = distance / speed
+
+'''
+집합의 항목을 삭제할 때는 discard 디스카드, remove 리무브, clear 클리어를 사용!
+*집합도 자료의 뭈음이다, 집합은 *중복된 데이터를 가질 수 없으며, 순서가 없다. 
+'''
+# 딕셔너리 출력하기 위드 반복문
+for i in planet_dict.keys():
+    print(i)
+
+for i in planet_dict.values():
+    print(i)
+
+for i,j in planet_dict.items():
+    print(i,j)
+
+english_dict = {}
+english_dict['원'] = '하나'
+print(english_dict)
