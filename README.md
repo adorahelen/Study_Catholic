@@ -15,3 +15,9 @@ June 24, 2024 → July 12, 2024
 ![우리말어음 오디오그램](https://github.com/user-attachments/assets/e3e95431-ddd5-4ab1-b8a3-cb75cfdf70ec)
 
 <청력 평가 진행 후 말소리 분포도>
+
+1. 청각장애는 귀가 아예 들리지 않는 사람(농인)부터,
+2. 청력에 문제가 생겼지만 일정 dB를 감지하는 사람까지 다양함
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/1ef2815f-7868-4517-ada3-9fe318a89666/82262fbb-6d32-4092-ad38-427b617353e9/Untitled.png)
+
