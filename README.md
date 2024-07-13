@@ -5,7 +5,13 @@ June 24, 2024 → July 12, 2024
 
 => 청각장애 학생을 위한 맞춤형 인공지능 서비스 개발 
 
-![우리말어음 오디오그램](https://github.com/user-attachments/assets/e3e95431-ddd5-4ab1-b8a3-cb75cfdf70ec)
-
 
 ![스크린샷(149)](https://github.com/user-attachments/assets/3c74dd24-44f7-4b1a-81d2-66808148984e)
+
+<파이썬 터틀 모듈을 이용한 그래픽 작업>
+
+
+
+![우리말어음 오디오그램](https://github.com/user-attachments/assets/e3e95431-ddd5-4ab1-b8a3-cb75cfdf70ec)
+
+<청력 평가 진행 후 말소리 분포도>
