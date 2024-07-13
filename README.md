@@ -28,6 +28,7 @@ June 24, 2024 → July 12, 2024
 ![스크린샷(160)](https://github.com/user-attachments/assets/b3904fcf-46a6-441e-b054-78ec7e1a28a0)
    
 5. 음성 <=> 문자는 많이 개발되었고 그 외 다른쪽도 마찬가지
+6. 따라서 시각처리 부분(이미지)을 중점적으로 고민할 것
 
    
 ![스크린샷(158)](https://github.com/user-attachments/assets/6173c550-d77f-44ef-8078-9faa582fefc8)
